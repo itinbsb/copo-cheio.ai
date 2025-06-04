@@ -1,0 +1,34 @@
+# Arquivos de ambiente
+# Ignora arquivos .env com variáveis de ambiente que podem conter informações sensíveis (ex: API Keys).
+# Permite que .env.example seja versionado para mostrar o formato esperado das variáveis.
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+!.env.example # Garante que .env.example NÃO seja ignorado
+
+# Arquivos de cache e temporários de pacotes
+# Arquivos gerados por gerenciadores de pacotes ou ferramentas de cache.
+.npm/
+.yarn/
+.pnpm-store/
+*.tgz
+*.zip
+
+# Arquivos de build e temporários de bundlers/transpiladores
+# Embora 'dist' já esteja lá, é bom cobrir outras saídas comuns.
+/build/
+/out/
+/tmp/
+
+# Arquivos de cobertura de teste
+/coverage/
+
+# Arquivos de editor/IDE específicos do usuário que não devem ser compartilhados
+# Além dos que você já tem.
+*.log*
+.history/
+
+# Arquivos gerados pelo sistema operacional
+.Trash/
